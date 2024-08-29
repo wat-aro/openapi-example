@@ -1,0 +1,13 @@
+services:
+  redoc:
+    image: redocly/redoc
+    ports:
+      - 4444:80
+    environment:
+      SPEC_URL: https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    ports:
+      - 4445:8080
+    environment:
+      SWAGGER_JSON_URL: https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml

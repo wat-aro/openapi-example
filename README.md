@@ -2,7 +2,21 @@
 
 https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml
 
-からクライアントやスタブサーバを生成する
+を元に APIドキュメント、APIクライアント、stubサーバを生成する
+
+## APIドキュメント
+
+``` shell
+docker compose up
+```
+
+### Redoc
+
+http://localhost:4444
+
+### swagger-ui
+
+http://localhost:4445
 
 ## Client
 
